@@ -156,7 +156,7 @@ public class BattleShipGame {
             System.out.println(currentOcean.identifyShip(shots[0], shots[1]).getShipType());
         }else{
             ui.printToUser("You have hit something");
-            ShipInter shotShip = currentOcean.identifyShip(shots[0],shots[1]);
+            ShipInter shotShip = currentOcean.getShipArray()[shots[0]][shots[1]];
             if(shotShip.isSunk()){
                 ui.printToUser("You sunk a " + shotShip.getShipType() + "!");
             }
