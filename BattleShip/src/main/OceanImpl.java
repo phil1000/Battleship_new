@@ -176,7 +176,8 @@ public class OceanImpl implements Ocean {
 	public String toString(){
 		String strOcean = "";
         if(isGameOver()){
-        	strOcean = restoreFromMemento(memento);
+        	// strOcean = restoreFromMemento(memento);
+        	System.out.println("You sunk all my battleships");
         }else{
 			int[] header = {0,1,2,3,4,5,6,7,8,9};
 	        strOcean = "* 0 1 2 3 4 5 6 7 8 9";
